@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: white;
+	background-color: black;
+}
+
+#heading {
+background-color: #F19600;
+border: 2px solid #F19600;
+border-radius: 15px;	
+text-shadow: 1px 2px 5px black;
+}
+
+#content {
+	
+	width: 80%;
+	height: 80%;
+	border: 2px solid black;
+}
+
+#myInfo {
+	
+	text-align: center;
+}
+
+h3 {
+	text-decoration: underline;	
+}
+}
