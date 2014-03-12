@@ -1,44 +1,75 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css" />
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-<script src="script.js"></script>
-<title>WhoIs API Example</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
 
-<body>
-<h1 id="heading"><center>Get Domain Name Info</center></h1>
-<hr />
-<br />
-<center>
-	<div id="content">
-	
-		<p>Enter Domain name into the textbox below in format XXXXXX.com</p>
-		<input type="text" id="dn" />	
-		<button id="btnSubmit">Submit</button>
-		<br />
-		<h3>Information To Retrieve</h3>
-		<div id="chkBoxes">
-			<input type="checkbox" id="all">Show All Data
-			<input type="checkbox" id="name">Domain Name
-			<br />
-			<input type="checkbox" id="organization">Organization
-			<input type="checkbox" id="createdDate" >Creation Date
-			<br />
-			<input type="checkbox" id="expiresDate">Expiration Date
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">		
+		<meta name="description" content="">
+		<meta name="author" content="Jordan Griffin">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+		<title>DroidDomains</title>
+		<link rel="stylesheet" href="droidDomainsStyle.css" />
+		<link rel="stylesheet" href="themes/droidDomains_theme.css" />
+ 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />   		
+  		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script> 
+  		<script src="getDomainInfo.js"></script>
+		
+	</head>
+
+	<body>
+		
+		<div data-role="page" id="home">
+			<div data-role="header">
+				<h1>DroidDomains</h1>
+			</div>
+			
+			<div data-role="content">
+				<div id="divInput">
+					<center>
+						<h2>Welcome To DroidDomains</h2>
+						<p>A Domain Information lookup tool for Android</p>	
+						<hr />
+						<p>With DroidDomains you can specify if you want just a piece of information about a domain such as the owner or the expiration date or have the entire
+						whois list shown on request.</p>						
+							<input type="text" id="domainName" />
+							<input type="button" id="btnSubmit" class="submitButton" value="Submit" data-inline="true"/>							
+					</center>				
+				</div>	
+				<div id="chkBoxes" class="ui-grid-a">
+					<div class="ui-block-a">
+						<label><input type="checkbox" id="chkExpired" data-theme="b"/>Expiration Date</label>					
+						<label><input type="checkbox" id="chkCreated" data-theme="b"/>Creation Date</label>
+						<label><input type="checkbox" id="chkRegistered" data-theme="b"/>Registered</label>
+						<label><input type="checkbox" id="chkTransfer"data-theme="b"/>TransferDate</label>
+						<label><input type="checkbox" id="chkNameservers"data-theme="b"/>NameServers</label>
+						
+					</div>
+					<div class="ui-block-b">
+						<label><input type="checkbox" id="chkName" data-theme="b"/>Domain Contacts Name</label>
+						<label><input type="checkbox" id="chkOrganization" data-theme="b"/>Domain Organization</label>
+						<label><input type="checkbox" id="chkAddress" data-theme="b"/>Full Address</label>
+						<label><input type="checkbox" id="chkPhone" data-theme="b"/>Domain Contact Phone</label>
+						<label><input type="checkbox" id="chkEmail" data-theme="b"/>Domain Contact Email</label>
+					</div>					
+				</div>
+				<div id="requestedInfo">
+					<hr />	
+					<center>
+						<h3>Requested Information</h3>
+					</center>					
+				</div>
+				
+				
+				
+							
+			</div>
+			
 			
 		</div>
-	</div>
-</center>
-<hr />
-<h3 id="informationHeader"><center>Requested Information</center></h3>
-<div id="myInfo">
-
-</div>
-</body>
+		
+	</body> 
 </html>

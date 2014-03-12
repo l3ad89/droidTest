@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+<title>WhoIs API Example</title>
+</head>
+
+<body>
+<h1 id="heading"><center>Get Domain Name Info</center></h1>
+<hr />
+<br />
+<center>
+	<div id="content">
+	
+		<p>Enter Domain name into the textbox below in format XXXXXX.com</p>
+		<input type="text" id="dn" />	
+		<button id="btnSubmit">Submit</button>
+		<br />
+		<h3>Information To Retrieve</h3>
+		<div id="chkBoxes">
+			<input type="checkbox" id="all">Show All Data
+			<input type="checkbox" id="name">Domain Name
+			<br />
+			<input type="checkbox" id="organization">Organization
+			<input type="checkbox" id="createdDate" >Creation Date
+			<br />
+			<input type="checkbox" id="expiresDate">Expiration Date
+			
+		</div>
+	</div>
+</center>
+<hr />
+<h3 id="informationHeader"><center>Requested Information</center></h3>
+<div id="myInfo">
+
+</div>
+</body>
+</html>
