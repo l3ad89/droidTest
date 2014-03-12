@@ -39,14 +39,13 @@
 							<input type="button" id="btnSubmit" class="submitButton" value="Submit" data-inline="true"/>							
 					</center>				
 				</div>	
-				<div id="chkBoxes" class="ui-grid-a">
+				<!--<div id="chkBoxes" class="ui-grid-a">
 					<div class="ui-block-a">
 						<label><input type="checkbox" id="chkExpired" data-theme="b"/>Expiration Date</label>					
 						<label><input type="checkbox" id="chkCreated" data-theme="b"/>Creation Date</label>
 						<label><input type="checkbox" id="chkRegistered" data-theme="b"/>Registered</label>
 						<label><input type="checkbox" id="chkTransfer"data-theme="b"/>TransferDate</label>
-						<label><input type="checkbox" id="chkNameservers"data-theme="b"/>NameServers</label>
-						
+						<label><input type="checkbox" id="chkNameservers"data-theme="b"/>NameServers</label>						
 					</div>
 					<div class="ui-block-b">
 						<label><input type="checkbox" id="chkName" data-theme="b"/>Domain Contacts Name</label>
@@ -54,7 +53,22 @@
 						<label><input type="checkbox" id="chkAddress" data-theme="b"/>Full Address</label>
 						<label><input type="checkbox" id="chkPhone" data-theme="b"/>Domain Contact Phone</label>
 						<label><input type="checkbox" id="chkEmail" data-theme="b"/>Domain Contact Email</label>
-					</div>					
+					</div>	-->
+					<div>
+						<select id="slectBox" data-mini="true">
+							<option value="expirationDate">Expiration Date</option>
+							<option value="creationDate">Creation Date</option>
+							<option value="registered">Registered</option>
+							<option value="transferDate">Transfer Date</option>
+							<option value="nameserver">Nameservers</option>
+							<option value="name">Domain Contacts Name</option>	
+							<option value="organization">Domain Organization</option>	
+							<option value="address">Full Address</option>
+							<option value="phone">Domain Contact Phone</option>
+							<option value="email">Domain Contact Email</option>			
+						</select>						
+					</div>
+									
 				</div>
 				<div id="requestedInfo">
 					<hr />	
