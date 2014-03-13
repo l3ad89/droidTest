@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		<!--Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
-		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">		
 		<meta name="description" content="">
 		<meta name="author" content="Jordan Griffin">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0">-->
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 		<title>DroidDomains</title>
 		<link rel="stylesheet" href="droidDomainsStyle.css" />
-		<link rel="stylesheet" href="themes/droidDomains_theme.css" />
+		<link rel="stylesheet" href="themes/droidDomainTheme.css" />
  		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
   		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />   		
   		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
@@ -29,18 +29,25 @@
 			
 			<div data-role="content">
 				<div id="divInput">
-					
 					<center>
-						<h2>Welcome To DroidDomains</h2>
+						<h1>Welcome To DroidDomains</h1>
 						<p>A Domain Information lookup tool for Android</p>	
-						<hr />
-						
-						<p>With DroidDomains you can specify if you want just a piece of information about a domain such as the owner or the expiration date or have the entire
-						whois list shown on request.</p>	
-										
-							<input type="text" id="domainName" />
-							<input type="button" id="btnSubmit" class="submitButton" value="Submit" data-inline="true"/>							
-					</center>	
+					</center>				
+					<ul data-role="listview" data-inset="true" data-theme="b">								
+						<li>
+							<center>						
+								<p>With DroidDomains you can specify if you want just a piece of information about a domain such as the owner or the expiration date or have the entire
+								whois list shown on request.</p>
+							</center>
+						</li>										
+						<li>
+							<center>
+								<input type="text" id="domainName" />
+								<input type="button" id="btnSubmit" class="submitButton" value="Submit" data-inline="true"/>
+							</center>
+						</li>							
+					</ul>							
+					
 								
 				</div>	
 				<!--<div id="chkBoxes" class="ui-grid-a">
@@ -58,8 +65,9 @@
 						<label><input type="checkbox" id="chkPhone" data-theme="b"/>Domain Contact Phone</label>
 						<label><input type="checkbox" id="chkEmail" data-theme="b"/>Domain Contact Email</label>
 					</div>	-->
-					<div>
-						<select id="selectBox" data-mini="true">
+					<center>
+					<div id="selectBoxDiv">						
+						<select id="selectBox" data-mini="true">								
 							<option value="expirationDate">Expiration Date</option>
 							<option value="creationDate">Creation Date</option>
 							<option value="registered">Registered</option>
@@ -69,20 +77,16 @@
 							<option value="organization">Domain Organization</option>	
 							<option value="address">Full Address</option>
 							<option value="phone">Domain Contact Phone</option>
-							<option value="email">Domain Contact Email</option>			
-						</select>						
+							<option value="email">Domain Contact Email</option>												
+						</select>	
+					 </center>				
 					</div>
 					<div id="requestedInfo">
 						<hr />	
 						<center>
 							<h3>Requested Information</h3>
 						</center>					
-					</div>
-					<br />
-					<br />
-					<br />
-					<br />
-					<br />
+					</div>					
 					<div data-role="footer">
 						<div data-role="navbar" data-iconpos="bottom">
 							<ul>

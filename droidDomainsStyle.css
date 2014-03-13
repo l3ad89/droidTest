@@ -2,3 +2,9 @@ h3{
 	
 	text-decoration: underline;
 }
+
+#selectBoxDiv{
+	
+	width: 40%;
+	text-align: center;
+}
