@@ -29,15 +29,19 @@
 			
 			<div data-role="content">
 				<div id="divInput">
+					
 					<center>
 						<h2>Welcome To DroidDomains</h2>
 						<p>A Domain Information lookup tool for Android</p>	
 						<hr />
+						
 						<p>With DroidDomains you can specify if you want just a piece of information about a domain such as the owner or the expiration date or have the entire
-						whois list shown on request.</p>						
+						whois list shown on request.</p>	
+										
 							<input type="text" id="domainName" />
 							<input type="button" id="btnSubmit" class="submitButton" value="Submit" data-inline="true"/>							
-					</center>				
+					</center>	
+								
 				</div>	
 				<!--<div id="chkBoxes" class="ui-grid-a">
 					<div class="ui-block-a">
@@ -55,7 +59,7 @@
 						<label><input type="checkbox" id="chkEmail" data-theme="b"/>Domain Contact Email</label>
 					</div>	-->
 					<div>
-						<select id="slectBox" data-mini="true">
+						<select id="selectBox" data-mini="true">
 							<option value="expirationDate">Expiration Date</option>
 							<option value="creationDate">Creation Date</option>
 							<option value="registered">Registered</option>
@@ -68,22 +72,27 @@
 							<option value="email">Domain Contact Email</option>			
 						</select>						
 					</div>
-									
-				</div>
-				<div id="requestedInfo">
-					<hr />	
-					<center>
-						<h3>Requested Information</h3>
-					</center>					
-				</div>
-				
-				
-				
-							
-			</div>
+					<div id="requestedInfo">
+						<hr />	
+						<center>
+							<h3>Requested Information</h3>
+						</center>					
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<div data-role="footer">
+						<div data-role="navbar" data-iconpos="bottom">
+							<ul>
+								<li><a href="" data-icon="user" class="ui-btn-active">WhoIs</a></li>
+								<li><a href="" data-icon="info">Page Rank</a></li>
+								<li><a href="" data-icon="search">Availability</a></li>
+							</ul>
+						</div>						
+					</div>	
+			</div>										
 			
-			
-		</div>
-		
 	</body> 
 </html>
