@@ -5,6 +5,9 @@ h3{
 
 #selectBoxDiv{
 	
-	width: 40%;
-	text-align: center;
+	width: 60%;
 }
+
+.ui-page .ui-content .ui-listview .ui-li-desc{
+    white-space : normal;
+}​
