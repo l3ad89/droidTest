@@ -11,3 +11,8 @@ h3{
 .ui-page .ui-content .ui-listview .ui-li-desc{
     white-space : normal;
 }​
+
+#requestedInfo{
+	
+	font-size: large;
+}
