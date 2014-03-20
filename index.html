@@ -24,7 +24,7 @@
 		
 		<div data-role="page" id="home">
 			<div data-role="header">
-				<h1>DroidDomains</h1>
+				<h1>DroidDomains</h1>							
 			</div>
 			
 			<div data-role="content">
@@ -68,7 +68,8 @@
 					</div>	-->
 					<center>
 					<div id="selectBoxDiv">						
-						<select id="selectBox" data-mini="true">								
+						<select id="selectBox" data-mini="true">
+							<option value="everything">All WhoIs Data</option>
 							<option value="expirationDate">Expiration Date</option>
 							<option value="creationDate">Creation Date</option>
 							<option value="registered">Registered</option>
@@ -82,22 +83,25 @@
 						</select>	
 					 </center>				
 					</div>
+					
 					<div id="requestedInfo">
-						<hr />	
 						<center>
-							<h3>Requested Information</h3>
-						</center>					
-					</div>					
-					<div data-role="footer">
-						<div data-role="navbar" data-iconpos="bottom">
-							<ul>
-								<li><a href="" data-icon="user" class="ui-btn-active">WhoIs</a></li>
-								<li><a href="" data-icon="info">Page Rank</a></li>
-								<li><a href="" data-icon="search">Availability</a></li>
-							</ul>
-						</div>						
-					</div>	
-			</div>										
+							
+						</center>
+					</div>
+					
+					
+				<div data-role="footer" data-position="fixed">
+					<div data-role="navbar" >
+						<ul>
+							<li><a href="" data-icon="user" class="ui-btn-active">WhoIs</a></li>
+							<li><a href="" data-icon="info">Page Rank</a></li>
+							<li><a href="" data-icon="search">Availability</a></li>
+						</ul>					
+					</div>		
+				</div>										
+			</div>	
+													
 			
 	</body> 
 </html>

@@ -14,9 +14,16 @@ $(document).ready(function(){
 		$.getJSON('http://api.whoapi.com/?domain='+domainName+'&r='+selectionRequest+'&apikey='+apikey,
 		function(dataObj){
 			if(dataObj.status == 0){
+				
+				var jsonData = dataObj;
+				
+				$('#home #requestedInfo').append("<h2><center>" + "Requested Info" + "</center></h2>");							
 				//checks for the data that user wants displayed
 				switch(selectionChoice){
 					
+					case "everything":
+						$('#home #requestedInfo').append("<pre><center>" + jsonData.whois_raw + jsonData.whois_raw_parent + "</center></pre>");
+						break;
 					case "expirationDate":
 						$('#home #requestedInfo').append("<center>Domain Expiration Date: " + JSON.stringify(dataObj.date_expires) + "</center> <br />");
 						break;
@@ -49,7 +56,7 @@ $(document).ready(function(){
 						break;
 				}	
 				
-				
+				console.log(dataObj);	
 				
 			}else{
 			// show error

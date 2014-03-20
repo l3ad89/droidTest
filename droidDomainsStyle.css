@@ -12,7 +12,8 @@ h3{
     white-space : normal;
 }​
 
-#requestedInfo{
+#home #requestedInfo{
 	
-	font-size: large;
+	font-family: sans-serif;
+	font-size: 12px;
 }
